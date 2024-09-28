@@ -60,9 +60,9 @@ ___
 Another Nash equilibrium is $(1.5,1.51)$. In this equilibrium firm $1$ fulfills market demand at the price of $1.5$ and has no incentive the change the price in every direction. Firm 2 is indifferent between the current price and any higher price, and no incentive to decrease price because it will lose money if it sells the product at a price less than $2$. 
 #### (b)
 Consider the best response of firms,
-$$BR_1(p_2)=\begin{cases}(p_2,+\infty],\quad &p_2< 1,\\ [1,+\infty], &p_2=1,\\p_2-0.01, &p_2>1\end{cases}$$
-$$BR_2(p_1)=\begin{cases}(p_1,+\infty],\quad &p_1< 2,\\ [2,+\infty], &p_1=2,\\p_1-0.01, &p_2>2\end{cases}$$
-And we find there are $100$ Nash equilibria from the above formula. They start with $(1.00,1.01)$ and go all the way up with one-cnet increases to $(1.99,2.00)$. The same logic to $(a)$ explain why they are.
+$$BR_1(p_2)=\begin{cases}(p_2,+\infty],\quad &p_2< 1,\\ [1,+\infty], &p_2=1,\\1.01, &p_2=1.01\\p_2-0.01, &1.01<p_2<50.51,\\50.5, &p_2\ge 50.51\end{cases}$$
+$$BR_2(p_1)=\begin{cases}(p_1,+\infty],\quad &p_1< 2,\\ [2,+\infty], &p_1=2,\\2.01, &p_1=2.01\\p_1-0.01, &2.01<p_1<51.01,\\51, &p_1\ge 50.51\end{cases}$$
+And we find there are $100$ Nash equilibria from the above formula. They start with $(1.01,1.02)$ and go all the way up with one-cnet increases to $(2.00,2.01)$. The same logic to $(a)$ explain why they are.
 ___
 ### 6
 **Answer:**
