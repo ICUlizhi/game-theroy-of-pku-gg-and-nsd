@@ -4,7 +4,7 @@
 
 ### 1
 #### (a) 
-**Answer:** 
+  
 There are $n$ bidders, $N = [n]$. Every bidder bids a price $b_i\ge 0$. Thus the strategy is $S_i=[0,+\infty)$ Then the payoff is 
 $$
 v_i(b_i,b_{-i})=
@@ -26,7 +26,7 @@ $$
 ---
 
 ### 2. ST Exercise 4.5
-**Answer:**
+ 
 In the first round, $U$ for player 1 is strictly dominated by $M$.
 In the first round, $C$ for player 2 is strictly dominated by $H$.
 Hence $\{M,D\}\times \{L,R\} $ survives.
@@ -39,7 +39,7 @@ Hence $\{M,D\}\times \{L,R\} $ survives.
 ---
 
 ### 3. ST Exercise 4.6
-**Answer:**
+ 
 #### (a)
 For $i$, when $t_j \ge 10$, his best reponse is $t_i=0$. When $t_j < 10$, the first order condition is $10-t_j-2t_i=0$. Then we find,
 $$t_i = \max\{\frac{10-t_i}{2},0\}$$
@@ -72,7 +72,7 @@ $$S_1^{*}=S_2^{*}\subset T_n$$
 ---
 
 ### 4. ST Exercise 4.7
-**Answer:**
+ 
 #### (a)
 The set of the player is $\{1,2\}$. The strategy spaces are $S_1=S_2=\{P,B,N\}$. The payoffs to player $1$ are: 
 $$
@@ -129,7 +129,7 @@ Thus $\{N\}\times \{N\}$ survives, which leads to a clear prediction.
 ---
 
 ### 5. ST Exercise 4.8
-**Answer:**
+ 
 #### (a)
 The average is less than $20$ regardless of the number of players, and $3/4$ of the average is less than $15$, This means $18$ also makes $i$ the only winner.
 #### (b)
@@ -143,7 +143,7 @@ which depends on the number of players .
 ---
 
 ### 6.
-**Answer:**
+ 
 #### (a)
 $$v_i(x_i,x_j)=\arctan x_i<\arctan (x_i+1)=v_i(x_i+1,x_j)$$
 Thus $x_i$ is strictly dominated.
@@ -159,7 +159,7 @@ They are obviously not mutual best responses.
 
 ### 7.
 
-**Answer:**
+ 
 #### (a)
 $n$ firms, $N=[n]$. $S_i=\mathbb R_+$. The payoff is:
 $$v_i(q_1,q_2,\dots,q_n)=(\max\{0,100-\sum_{j\in N}q_j\}-10)q_i$$

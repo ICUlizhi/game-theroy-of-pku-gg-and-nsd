@@ -3,7 +3,7 @@
 徐靖 2200012917
 
 ### 1 ST Exercise 5.4
-**Answer:**
+ 
 #### (a)
 Assume the players can ask for amounts that are not restricted to integers, then the best response is 
 $$BR_i(s_j)=\begin{cases}8-s_j, \quad & s_j \in [0,8),\\ [0,8], &s_j=8.\end{cases}$$
@@ -14,7 +14,7 @@ And there is another Nash equilibrium $(8,8)$. That is because there are no diff
 
 ___
 ### 2 ST Exercise 5.5
-**Answer:**
+ 
 #### (a)
 Let $s_1,s_2,s_3$ represent whether to contribute, $1$ if contribute, $0$ if not, then the best responses is 
 $$
@@ -29,7 +29,7 @@ $$
 Traversing all $2 ^ 3=8 $ strategy combinations, it was found that only $(0,0,0) , (0,1,1) , (1,0,1) , (1,1,0)$ are pure strategy Nash equilibria.
 ___
 ### 3 ST Exercise 5.9
-**Answer:**
+ 
 #### (a)
 Assume $n\ge 2$ , one will of course maximize his clean time when $c>1$ regardless of the other's choice. Thus the unique Nash equilibrium is $s_i=5, \forall i\in [n]$.
 #### (b)
@@ -38,7 +38,7 @@ One will of course minimize his clean time when $c>1$ regardless of the other's 
 The Nash equilibrium is obviously not Pareto efficient. Let $s_i=5$ and we have $v_i=-2s_i+\sum_{i=1}^5s_i=15>0$. In this case everyone is better.
 ___
 ### 4 ST Exercise 5.10
-**Answer:**
+ 
 #### (a)
 First order condition:
 $$a+\mathrm e_j-2\mathrm e_i=0$$
@@ -65,7 +65,7 @@ $$BR_2(p_1)=\begin{cases}(p_1,+\infty],\quad &p_1< 2,\\ [2,+\infty], &p_1=2,\\2.
 And we find there are $100$ Nash equilibria from the above formula. They start with $(1.01,1.02)$ and go all the way up with one-cnet increases to $(2.00,2.01)$. The same logic to $(a)$ explain why they are.
 ___
 ### 6
-**Answer:**
+ 
 Nash equilibrium exists only when $p_1$ is between firm $1$ and firm $2$ because:
 - When $p_1<0$, both firms lose money at this price, and they will definitely raise prices in turn
 - When $p_1>\text{firm 2's marginal cost}=2$, both firms make money at this price, and they will definitely lower prices in turn to gain market share
@@ -74,7 +74,7 @@ Consider the case of $1\ge p_1 \ge 2$, at which firm $2$ makes no profit and fir
 
 ___
 ### 7 ST Exercise 5.16
-**Answer:**
+ 
 #### (a)
 For $x^*$, we have
 $$v-p_1-x^*=v-p_2-(1-x^*)\Rightarrow x^*=\frac{1+p_2-p_1}{2}$$
