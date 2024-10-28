@@ -1,4 +1,6 @@
 "# game-theroy-of-pku-gg-and-nsd"
+## 2024/10/28
+- hj : hw5 
 ## 2024/10/21
 - hj : hw4 
 ## 2024/10/8
