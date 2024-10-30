@@ -39,7 +39,7 @@ $$ 0 = \frac{\partial u_i}{\partial x} = \frac{1}{x}-\frac{n}{A-nx}$$
 #### (3)
 实际上, $\lim_{n\rightarrow +\infty} 2\ln (A/2) - \ln n  = -\infty = \lim_{n\rightarrow +\infty} 2\ln (A) - 2\ln n $
 同时,  $\lim_{n\rightarrow +\infty} x_i = 0$
-(1)和(2)两个结果是相同的
+(1)和(2)两个结果是相同的, 企业的效用均趋于 $-\infty$, 企业的空气消耗均趋于 $0$.
 
 ### 4
 #### (1)
