@@ -169,6 +169,16 @@ $$v_1'\leq v_1\Leftrightarrow \frac{2}{3}\leq \delta $$
     </tr>
 </table>
 
-类似 (3) 的讨论, 降价后企业相对触发策略无一次偏离的条件为:
-$$v'_1=5\leq \frac{1}{1-\delta}=v_1\Rightarrow \delta\ge \frac{4}{5}$$
-这个贴现因子比(3)中的大, 因此有更大可能会致使企业选择生产一次低品质药物, 从而导致企业与消费者两败俱伤.
+假设此时企业打算威胁消费者始终买药, 它执行如下的周期生产高低质量产品的触发策略:
+$$s_1^t = \begin{cases}H, \quad &2\nmid t , N\notin h_t\\L , &o.w.\end{cases}$$
+
+此时对消费者来说, 一直买药的收益为
+$$\sum_{t=1}^{+\infty} (2-\delta)\delta^{2t-2} = \frac{2-\delta}{1-\delta^2}$$
+由于在奇数轮时消费者买药更有利, 因此消费者的一次偏离, 即 $2k$ 轮博弈时不买药后的收益的上界为:
+$$\sum_{t=1}^{k} (2-\delta)\delta^{2t-2}+\delta^{2k} = \frac{(2-\delta)(1-\delta^{2k})}{1-\delta^2}+\delta^{2k} = \frac{2-\delta}{1-\delta^2} -\frac{\delta^{2k}(1-\delta+\delta^2)}{1-\delta^2}<\frac{2-\delta}{1-\delta}$$
+
+从而消费者无可获利偏移, 被迫始终购买药品, 此时企业的收益为
+$$\sum_{t=1}^{+\infty} (1+5\delta)\delta^{t-1} = \frac{1+5\delta}{1-\delta^2} >\frac{1}{1-\delta}$$
+
+上不等式的成立条件是 $\delta>0$ .从而企业更倾向于选择周期生产高低质量产品的触发策略而非一直生产高质量药品的触发策略. 当 $\frac{2-\delta}{1-\delta^2}<\frac{1}{1-\delta}\Leftrightarrow \delta>\frac{1}{2}$ 时消费者在该情形下的收益比降价前小. 而当 $\delta\leq \frac{1}{2}$ 时, 企业始终生产低质量产品的收益更高, 这导致消费者完全买不到高质量药品. 
+综上所述, 无论$\delta$取值如何, 将药品价格降低都反而使得消费者处境更劣,  为企业和消费者带来两败俱伤的恶果.
