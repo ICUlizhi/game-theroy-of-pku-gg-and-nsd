@@ -86,21 +86,27 @@ $$q_1 = \frac{a-c}{2}, q_2=q_3= \begin{cases}\frac{a-c}{6}, \quad &q_1 = \frac{a
 纯策略单阶段博弈nash均衡是 $(B,B),(C,C)$ 收益分别为 $(5,5),(1,1)$
 二阶段是最后一轮, 一定玩单阶段博弈nash均衡.但由于有两个均衡, 因此较差的 $(C,C)$ 可以作为威胁. 这一威胁可能造成被威胁方的损失为 $5-1=4$
 枚举第一轮可能的行动组合:
-- AA, 此时一次偏离收益 $\leq 13-10=3<4$, 对应的策略是SPE:
-$$s_i^1=A,s_i^2(h)=\begin{cases}B,\quad & h = AA,\\C, &o.w.\end{cases}$$
-
+- AA, 此时一次偏离收益 $\leq 13-10=3<4$, 对应存在的 SPE 的充要条件为:
+$$s_1^1=s_2^1=A,s_1^2(h)=\begin{cases}B,\quad & h = AA,\\C, &h = AB,AC\end{cases},\\s_2^2(h)=\begin{cases}B,\quad & h = AA,\\C, &h = BA,BC\end{cases},s_1^2(h) = s_2^2(h)\in \{B,C\}$$
+这样的 SPE 共 $2^4 = 16$ 种. 实际上是在4个无需威胁的历史下每个历史两种可能的均衡的排列数.
 - BA, 此时甲的一次偏离收益 $\leq 13-12=1<4$, 乙的一次偏离收益 $\leq 5-2=3<4$, 对应的策略是SPE:
-$$s_1^1=B,s_1^2(h)=\begin{cases}B,\quad & h = BA,\\C, &o.w.\end{cases},s_2^1=A,s_1^2(h)=\begin{cases}B,\quad & h = BA,\\C, &o.w.\end{cases}$$
-  - AB 是对称的情况
+$$s_1^1=B,s_1^2(h)=\begin{cases}B,\quad & h = BA,\\C, &h = BB\end{cases},s_2^1=A,\\s_2^2(h)=\begin{cases}B,\quad & h = BA,\\C, &h = CA\end{cases},s_1^2(h) = s_2^2(h)\in \{B,C\}$$
+同理, 这样的 SPE 共 $2^6=64$ 种
+  - AB 是对称的情况, 也有 $64$ 种
 - CA, 此时甲在一阶段也没有更好选择, 乙的一次偏离收益 $\leq 1-0=1<4$
-$$s_1^1=C,s_1^2(h)=\begin{cases}B,\quad & h = CA,\\C, &o.w.\end{cases},s_2^1=A,s_1^2(h)=\begin{cases}B,\quad & h = CA,\\C, &o.w.\end{cases}$$
-  - AC 是对称的情况
-- BB, 此时没有利用第二轮威胁第一轮的必要, 此时策略 $s_i^1=B,s_i^2(h)=B$ 与 $s_i^1=B,s_i^2(h)=C$ 的双方都没有可获利一次偏离, 均为 SPE
-- CC, 此时没有利用第二轮威胁第一轮的必要, 此时策略 $s_i^1=C,s_i^2(h)=B$ 与 $s_i^1=C,s_i^2(h)=C$ 的双方都没有可获利一次偏离, 均为 SPE
+$$s_1^1=C,s_1^2(h)=\begin{cases}B,\quad & h = CA,\\C, &h = CC\end{cases},s_2^1=A,s_1^2(CA)=B,\\s_1^2(h) = s_2^2(h)\in \{B,C\}$$
+同理, 这样的 SPE 共 $2^7=128$ 种
+  - AC 是对称的情况, 也有 $128$ 种
+- BB, 此时没有利用第二轮威胁第一轮的必要, SPE只需满足 
+$$s_i^1=B,s_1^2(h)=s_2^2(h)\in \{B,C\}$$ 
+这样的 SPE 共 $2^9=516$ 种
+- CC, 此时没有利用第二轮威胁第一轮的必要, SPE只需满足 
+$$s_i^1=C,s_1^2(h)=s_2^2(h)\in \{B,C\}$$ 
+这样的 SPE 共 $2^9=516$ 种
 - BC, 此时乙存在可获利一次偏离$B$, 收益为 $5-0=5>4$, 不受威胁, 因此不存在 SPE
   - CB 是对称的情况
 
-以上枚举了全部情形, 给出总共 $9$ 个纯策略 SPE.
+以上枚举了全部情形, 给出总共 $1424$ 个纯策略 SPE.
 
 
 
@@ -164,7 +170,9 @@ $$v_1'=6+\sum_{i=1}^{+\infty}0\cdot \delta^{i-1}=6$$
 因此"企业生产高品质药物, 消费者每个阶段都购买"能作为均衡结果出现的条件为
 $$v_1'\leq v_1\Leftrightarrow \frac{2}{3}\leq \delta $$
 
-#### (4)
+#### (4) (修改后)
+
+#### (4) (修改前)
 降价后单阶段博弈变为:
 <table>
     <tr>
