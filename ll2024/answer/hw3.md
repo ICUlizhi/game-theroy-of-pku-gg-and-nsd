@@ -97,16 +97,24 @@ $$s_1^1=B,s_1^2(h)=\begin{cases}B,\quad & h = BA,\\C, &h = BB\end{cases},s_2^1=A
 $$s_1^1=C,s_1^2(h)=\begin{cases}B,\quad & h = CA,\\C, &h = CC\end{cases},s_2^1=A,s_1^2(CA)=B,\\s_1^2(h) = s_2^2(h)\in \{B,C\}$$
 同理, 这样的 SPE 共 $2^7=128$ 种
   - AC 是对称的情况, 也有 $128$ 种
-- BB, 此时没有利用第二轮威胁第一轮的必要, SPE只需满足 
-$$s_i^1=B,s_1^2(h)=s_2^2(h)\in \{B,C\}$$ 
-这样的 SPE 共 $2^9=516$ 种
-- CC, 此时没有利用第二轮威胁第一轮的必要, SPE只需满足 
-$$s_i^1=C,s_1^2(h)=s_2^2(h)\in \{B,C\}$$ 
-这样的 SPE 共 $2^9=516$ 种
+- BB
+  - 若第二轮也玩 $BB$, 则任何策略不被威胁, 均没有偏离必要, SPE只需满足 
+$$s_i^1=B,s_i^2(BB)=B,s_1^2(h)=s_2^2(h)\in \{B,C\}$$ 
+这样的 SPE 共 $2^8=256$ 种
+  - 若第二轮玩 $CC$, 则在部分历史下不能玩 $BB$, 因为偏离收益是 $4$. 此时 SPE 满足
+$$s_i^1=B,s_1^2(h)=s_2^2(h)\in \{B,C\},s_i^2(h)=\begin{cases}C,\quad & h = AB,BA,BB\end{cases}$$  
+这样的 SPE 共 $2^6=64$ 种
+- CC
+  - 若第二轮玩 $BB$, 则任何策略不被威胁, 均没有偏离必要, SPE只需满足 
+$$s_i^1=C,s_i^2(CC)=B,s_1^2(h)=s_2^2(h)\in \{B,C\}$$ 
+这样的 SPE 共 $2^8=256$ 种
+  - 若第二轮玩 $CC$, 则在部分历史下不能玩 $BB$, 因为偏离收益是 $4$. 此时 SPE 满足
+$$s_i^1=B,s_1^2(h)=s_2^2(h)\in \{B,C\},s_i^2(h)=\begin{cases}C,\quad & h = CA,CB,CC,BC,AC\end{cases}$$  
+这样的 SPE 共 $2^6=16$ 种
 - BC, 此时乙存在可获利一次偏离$B$, 收益为 $5-0=5>4$, 不受威胁, 因此不存在 SPE
   - CB 是对称的情况
 
-以上枚举了全部情形, 给出总共 $1424$ 个纯策略 SPE.
+以上枚举了全部情形, 给出总共 $992$ 个纯策略 SPE.
 
 
 
@@ -170,7 +178,33 @@ $$v_1'=6+\sum_{i=1}^{+\infty}0\cdot \delta^{i-1}=6$$
 因此"企业生产高品质药物, 消费者每个阶段都购买"能作为均衡结果出现的条件为
 $$v_1'\leq v_1\Leftrightarrow \frac{2}{3}\leq \delta $$
 
-#### (4) (修改后)
+#### (4) (修改后)(思考题)
+降价后单阶段博弈变为:
+<table>
+    <tr>
+        <th colspan="2" style="border:none;"></th>
+        <th colspan="2" style="border:none; text-align:center">消费者</th>
+    </tr>
+    <tr>
+        <th colspan="2" style="border:none;"></th>
+        <th style="border:none; text-align:center;">B</th>
+        <th style="border:none; text-align:center;">N</th>
+    </tr>
+    <tr>
+        <th rowspan="2" style="border:none; text-align:center; vertical-align:middle">企业</th>
+        <th style="border:none; text-align:center;">H</th>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">1, 2</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">-4, 0</td>
+    </tr>
+    <tr>
+        <th style="border:none; text-align:center;">L</th>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">5, -1</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">0, 0</td>
+    </tr>
+</table>
+
+
+
 
 #### (4) (修改前)
 降价后单阶段博弈变为:
