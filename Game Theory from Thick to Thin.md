@@ -99,7 +99,7 @@
 > **不可置信的威胁**会出现在均衡路径外
 4. **逆向归纳法 (backward inducion)** : 下简称BI, 其解为BI solution.
    - NE只要求在均衡路径上每个人都最优化, 而BI则要求任何路径上都要做最优选择
-   - **序贯理性 (sequentially rational)**: 在任何一个信息集上, 当前策略都是对手策略的BR. 
+   - **序贯理性 (sequentially rational)**: 在任何一个信息集上, 当前策略都是对手策略的BR. 无论在路径上还是在路径外
    - BI不考虑未来能否改(也即给定后续结果), 且不关注当前会不会到达. 
    - 一些定理
      - 存在性条件 : 任意有限完美信息博弈存在BI solution. 
@@ -145,7 +145,23 @@ $$s_i : \bigcup_{t=0}^{T-1}H_t\rightarrow A_i, \quad s_i=(s_i^1,s_i^2,\cdots,s_i
 $$\sum_{\theta_{-i}\in \Theta_{-i}}\phi_i(\theta_{-i}|\theta_{ij})v_i(s_i^*(\theta_{ij}),s^*_{-i}(\theta_{-i});\theta_i,\theta_{-i})\\\leq \sum_{\theta_{-i}\in \Theta_{-i}}\phi_i(\theta_{-i}|\theta_{ij})v_i(a_i,s^*_{-i}(\theta_{-i});\theta_i,\theta_{-i})$$ 
 > $P(B|A) = P(AB)/P(A)$
 
- 
+## Handout 5
+1. **信念系统 (system of beliefs)**
+   - **definition** : 信念系统 $\mu$ 是指在一个扩展形式博弈中, 对于每个信息集 \( h \in H \) 和其中的每个决策节点 \( x \in h \), 为玩家 \( i \) 在信息集 \( h \) 中选择决策时分配一个概率 \( \mu(x) \in [0, 1] \), 表示玩家 \( i \) 认为自己位于决策节点 \( x \) 的概率. 对于每个信息集 \( h \in H \), 有 $\sum_{x \in h} \mu(x) = 1$
+     - 完美信息只有一个信念系统
+   - $(\text{BNE }\sigma^*,\mu)$ 成为**PBE (perfect Bayesian equilibrium)** 的四个要求: (这里的完美和完美信息的完美不同)
+     - 博弈有信念系统.
+     - 路径上信息集的信念与贝叶斯法则一致, $\mu(x)=\mathbb P^{\sigma^*}(x)/\mathbb P^{\sigma^*}(h)$.
+     - 对于不在均衡路径上的信息集, 贝叶斯法则不适用, 任何信念都可以分配.
+     - 给定信念, 玩家的策略必须是序贯理性的. 也就是说, 在每个信息集中, 玩家都会做最佳反应. $\mathbb E[v_i(\sigma_i,\sigma_{-i},\theta)|h,\mu]\ge \mathbb E[v_i(s_i,\sigma_{-i},\theta)|h,\mu], \forall s_i$. 无论在不在均衡路径上 (无论贝叶斯法则适不适用)
+    - 假如BNE的任何信息集都在均衡路径上, 则它就是PBE
+      - PBE一定是BNE
+      - 对于完美信息, PBE等价于SPE
+
+2. **信号博弈 (Signaling Games)**
+   - **分离均衡 (Separating Equilibrium)** 指均衡下不同类型的发送者选择不同的信号, 这些信号能够清楚地反映发送者的类型, 并且接收者能够根据接收到的信号准确推断发送者的类型. 比如高能力者选择接受教育, 低能力者选择不接受.
+   - **混同均衡 (Pooling Equilibrium)** 指均衡下不同类型的玩家选择相同的信号，因此接收者无法从信号中区分出玩家的类型.
+
 ## 往年题型整理
 > 不同形式语言的复杂度不同, 而人的演算能力是定值. 因此形式语言或者模型越复杂, 问题本身越简单.
 > 不同问题的规模不同, 而人的演算能力是定值. 因此问题规模越大, 越容易存在巧妙的trick.
