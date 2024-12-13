@@ -212,3 +212,13 @@ $$\sum_{\theta_{-i}\in \Theta_{-i}}\phi_i(\theta_{-i}|\theta_{ij})v_i(s_i^*(\the
 - 直接逆向归纳即可, 给出的solution应当形如 $(\sigma_1,\sigma_2,\cdots,\sigma_n)$
 > (5) 🔥🔥 Find a Nash equilibrium that is not a backward induction solution.
 - 专门构造, 使得在非均衡路径上不是nash均衡.
+
+### 信号博弈
+> (1) 🔥🔥 求分离/混同均衡
+- 先确定/待定信息发送者的策略
+- 根据策略确定/待定信念系统
+- 根据信念系统探寻信息接受者的最优选择/无差异条件
+- 回到信息发送者, 判断是否偏离
+  - 偏离则该均衡不存在, 不偏离就已求出均衡
+> PS : "待定"指待定系数
+> PS : 当某个信息集的信念不在均衡路径上时, 信念不受约束, 则需要对信息接受者的不同反应对应的信念区间分类讨论
