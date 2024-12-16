@@ -87,4 +87,109 @@ $$BR_2(\mu) = \begin{cases}c,\quad &0\leq\mu<\frac{1}{4},\\ \{a,c\}, &\mu=\frac{
   - Sender 都选 $m_1$, Receiver 选 $ab$, 信念为 $\mu_1 = 0.6, \mu_2\in(\frac{4}{5},1]$
 
 ## 3
+#### (a)
+![](5-3a.png)
 
+#### (b)
+- 玩家 1 选择 $XY$ 表示类型优秀时选择策略 $X$, 类型非常好时选择策略 $Y$.
+- 玩家 2 选择 $XY$ 表示在 $h_1=(EB,GB)$ 上选择策略 $X$, 在 $h_2=(ES,GS)$ 上选择策略 $Y$.
+<table>
+    <tr>
+        <th colspan="2" style="border:none;"></th>
+        <th colspan="4" style="border:none; text-align:center">参与人 2</th>
+    </tr>
+    <tr>
+        <th colspan="2" style="border:none;"></th>
+        <th style="border:none; text-align:center;">LL</th>
+        <th style="border:none; text-align:center;">LH</th>
+        <th style="border:none; text-align:center;">HL</th>
+        <th style="border:none; text-align:center;">HH</th>
+    </tr>
+    <tr>
+        <th rowspan="4" style="border:none; text-align:center; vertical-align:middle">参与人 1</th>
+        <th style="border:none; text-align:center;">BB</th>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">-3,3.5</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">-3,3.5</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">1, 5</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">1, 5</td>
+    </tr>
+    <tr>
+        <th style="border:none; text-align:center;">BS</th>
+         <td style="border: 1px solid black; text-align:center; vertical-align:middle;">0,1.5</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">2,0</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">2,2.5</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">4,1</td>
+    </tr>
+    <tr>
+        <th style="border:none; text-align:center;">SB</th>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">-2,1.5</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">0,0.5</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">0,2</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">2,1</td>
+    </tr>
+    <tr>
+        <th style="border:none; text-align:center;">SS</th>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">1,-0.5</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">5,-3</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">1,-0.5</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">5,-3</td>
+    </tr>
+</table>
+
+#### (c)
+
+<table>
+    <tr>
+        <th colspan="2" style="border:none;"></th>
+        <th colspan="4" style="border:none; text-align:center">参与人 2</th>
+    </tr>
+    <tr>
+        <th colspan="2" style="border:none;"></th>
+        <th style="border:none; text-align:center;">LL</th>
+        <th style="border:none; text-align:center;">LH</th>
+        <th style="border:none; text-align:center;">HL</th>
+        <th style="border:none; text-align:center;">HH</th>
+    </tr>
+    <tr>
+        <th rowspan="4" style="border:none; text-align:center; vertical-align:middle">参与人 1</th>
+        <th style="border:none; text-align:center;">BB</th>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">6p-6,p+3</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">6p-6,p+3</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">6p-2,4+2p</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">6p-2,4+2p</td>
+    </tr>
+    <tr>
+        <th style="border:none; text-align:center;">BS</th>
+         <td style="border: 1px solid black; text-align:center; vertical-align:middle;">0,5p-1</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">4-4p,8p-4</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">4p,7p-1</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">4,10p-4</td>
+    </tr>
+    <tr>
+        <th style="border:none; text-align:center;">SB</th>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">8p-6,3-3p</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">12p-6,3-5p</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">4p-2,4-4p</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">8p-2,4-6p</td>
+    </tr>
+    <tr>
+        <th style="border:none; text-align:center;">SS</th>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">2p,p-1</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">4+2p,2p-4</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">2p,p-1</td>
+        <td style="border: 1px solid black; text-align:center; vertical-align:middle;">4+2p,2p-4</td>
+    </tr>
+</table>
+
+当 $p\in(0,1)$ 时, 由划线法知纯策略 BNE 为 $(SS,LL)$ 和 $(BS,HL)$
+- $P=0,1$ 时, 退化为完全信息动态博弈, NE 分别为 $(S,LL)$, $(S,HL)$
+
+#### (d)
+设 $\mu$ 是 $h_1=(EB,GB)$ 上 $EB$ 的信念, $\lambda$ 是 $h_2 = (ES,GS)$ 上 $ES$ 的信念
+
+由于 PBE 一定是 BNE, 我们发现 $p\in(0,1)$ 时, 纯策略 PBE 唯一:
+$$(BS,HL),\mu = 1,\lambda = 0$$
+
+#### (e)
+- c 中的 BNE 是静态均衡, 不考虑动态过程中后手根据观察到的局面更新对局面的信念, 从而作修正
+- d 中的 PBE 一定蕴含 c 中的 BNE, 而 c 中的 BE 不一定为 d 中的 PBE

@@ -1,4 +1,6 @@
 "# game-theroy-of-pku-gg-and-nsd"
+## 2024/12/16
+- ll : hw5
 ## 2024/11/23
 - 后面只更新ll作业和复习笔记 [Game Theory from Thick to Thin], 因为hj这边交6次作业平时分就满分了.
 - ll : hw4
