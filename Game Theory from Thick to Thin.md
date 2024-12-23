@@ -73,15 +73,21 @@
     - **混合策略占优** ：混合策略对纯策略占优 
       - 相应有 IESDS 
       - original game 的 NE $\Leftrightarrow$  IESDS 后的 reduced game 的 NE
+### Topic : 双人零和博弈
+两个玩家的目标完全对立, 一个人的收益就是另一个人的损失
+  - **maxmin值** : 玩家 $i$ 的最大最小策略
+  - **minmax值** : 另一玩家的最小最大策略
+  - 总有 $\max_{s_i}\min_{s_{-i}}v_1(s_1,s_2)\leq \min_{s_{-i}}\max_{s_i}v_1(s_1,s_2)$
+  - 双人零和博弈下考虑所有策略(混合, 纯)时, maxmin值和minmax值相等
 
 ## Handout 3
 
 1. **扩展形式博弈 (extensive form game)** : 序贯博弈 (sequential game)
    - 博弈🌲,节点(nodes), 玩家分配(player assignment), 可用行动(available action). 
-   - **信息集** : 节点集的一种划分 
+   - **信息集** : 节点集的一种划分, 可以是单点
      - 玩家不清楚处于信息集中的哪个节点
      - 可用行动相同
-   - **完美记忆 (perfect recall)** : 玩家记住他们以前所选择的行动. 
+   - **完美记忆 (perfect recall)** : 每个玩家在决策时都能知道自己所有的历史行动和观察到的所有信息. (对任意参与者 $i$ 的任意信息集中的节点 $x,y$, 以及 $x$ 的前继 $u(u\to \dots \to x)$, 都存在 $v$ 满足 : $v$ 是 $y$ 的前继, $v$ 与 $u$ 在同一个信息集. )
    - **完美信息博弈 (game of perfect information)** : 每个信息集都是**单点(singleton)**
      - 完美信息博弈参与者拥有完美回忆
 
@@ -91,8 +97,11 @@
      - 每个策略组合都会到达唯一的终点, 称为结果
    - 混合策略 : 纯策略的分布
    - **行为策略**: 为每个信息集提供一个行动集元素的分布
+   - 在完美回忆条件下, 对于每一个mixed strategy, 存在一个behavioral strategy和前者等价, 反之亦然.
 > 混合策略维度不低于行为策略 : 前者蕴含了路径经过同一信息集上不同节点的概率分布. 自然完美信息博弈时这个概率分布的维度为0.
-   - 在Perfect Recall条件下, 对于每一个mixed strategy, 存在一个behavioral strategy和前者等价, 反之亦然.
+> 完美回忆条件下, 行为策略$\to$混合策略$\to$行为策略是恒同映射, 但混合策略$\to$行为策略$\to$混合策略不是
+
+
 
 3. **扩展形式博弈的NE** : 即写成正则表达的NE. 
    - 如果 $\sigma$ 可以正概率到达一个信息集, 则该信息集在均衡路径上.
@@ -113,7 +122,7 @@
     - 有限完美信息博弈中, **SPE $\Leftrightarrow$ 没有可获利的一次偏离 $\Leftrightarrow$ BI solution**
 > "SPE $\Leftrightarrow$ 没有可获利的一次偏离" $\Rightarrow$ "SPE $\Leftrightarrow$ BI solution" $\Rightarrow$ "纯策略BI solution = NE"
       
-## Topic 1: 重复博弈
+### Topic : 重复博弈
 
 1. **重复博弈 (repeated game)** 
    - **阶段博弈 (stage game)** : 指重复的 $n$ 个period中的一个 
@@ -131,6 +140,15 @@ $$s_i : \bigcup_{t=0}^{T-1}H_t\rightarrow A_i, \quad s_i=(s_i^1,s_i^2,\cdots,s_i
    - 无穷博弈下, 一直玩同一个stage NE, 得到的是SPE. 
    - 若 stage NE 有帕累托严格改进 $a$, 那么一定存在足够大的贴现值, 使得存在一个SPE, 均衡结果上在路径上一直在玩a. 
 
+### Topic : 知识算子与信息分割 
+> (只有通选博弈论考)
+- **信息分割** : 对于参与者 \(i\)，用 $\Gamma_i$ 表示对于 $Y$的一个分割. (即 $i$ 的信息集的组合)
+  - 事件 $A$ 是 \(Y\) 的一个子集, 如果 $w\in A$, 则称事件 $A$ 在状态 $w$ 上成立
+  - 分割$\Gamma_i$下, 包含状态 $w\in Y$ 的集合表示为 $F_i(w)$
+  - 如果 $F_i(w)\subset A$, 则称 $i$ 在状态 $w$ 上知道事件 $A$ 成立
+  - 参与者 $i$ 知道 $A$ 成立, 记作 $K_iA = \{w\in Y|F_i(w)\subset A\}$
+  - 参与者 $j$ 知道参与者 $i$ 知道 $A$ 成立, 记作 $K_jK_iA = \{w\in Y|F_j(w)\subset K_iA\}$
+
 ## Handout 4
 
 1. **贝叶斯博弈/静态非完全信息博弈 (Bayesian game)**
@@ -141,7 +159,7 @@ $$s_i : \bigcup_{t=0}^{T-1}H_t\rightarrow A_i, \quad s_i=(s_i^1,s_i^2,\cdots,s_i
      - $\mathbb P$ : $\Theta$ 上的分布, 玩家们具备的一个**共同先验(common prior)**.
    - **关于类型的后验概率(posterior belief about his opponents’ types)**  : $\phi(\cdot|\theta_i)$. 其中 $\phi(\theta_{-i}|\theta_i)=\mathbb P(\theta_i,\theta_{-i})/\mathbb P(\theta_i)$
    - 纯策略 $s_i : \Theta_i\to A_i$, 混合策略 $\sigma_i : \Theta_i\to\Delta(A_i)$
-   - 纯策略贝叶斯NE : $s^*=(s_1^*,s_2^*,\dots,s_n^*) \;\text{s.t.}\;\forall i,\forall \theta_{ij}\in \Theta_i,\forall a_i\in A_i$
+   - **纯策略贝叶斯纳什均衡(BNE)** : $s^*=(s_1^*,s_2^*,\dots,s_n^*) \;\text{s.t.}\;\forall i,\forall \theta_{ij}\in \Theta_i,\forall a_i\in A_i$
 $$\sum_{\theta_{-i}\in \Theta_{-i}}\phi_i(\theta_{-i}|\theta_{ij})v_i(s_i^*(\theta_{ij}),s^*_{-i}(\theta_{-i});\theta_i,\theta_{-i})\\\leq \sum_{\theta_{-i}\in \Theta_{-i}}\phi_i(\theta_{-i}|\theta_{ij})v_i(a_i,s^*_{-i}(\theta_{-i});\theta_i,\theta_{-i})$$ 
 > $P(B|A) = P(AB)/P(A)$
 
@@ -213,7 +231,7 @@ $$\sum_{\theta_{-i}\in \Theta_{-i}}\phi_i(\theta_{-i}|\theta_{ij})v_i(s_i^*(\the
 > (5) 🔥🔥 Find a Nash equilibrium that is not a backward induction solution.
 - 专门构造, 使得在非均衡路径上不是nash均衡.
 
-### 信号博弈
+### n. 信号博弈
 > (1) 🔥🔥 求分离/混同均衡
 - 先确定/待定信息发送者的策略
 - 根据策略确定/待定信念系统
