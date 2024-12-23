@@ -181,7 +181,8 @@ $$\sum_{\theta_{-i}\in \Theta_{-i}}\phi_i(\theta_{-i}|\theta_{ij})v_i(s_i^*(\the
 2. **信号博弈 (Signaling Games)**
    - **分离均衡 (Separating Equilibrium)** 指均衡下不同类型的发送者选择不同的信号, 这些信号能够清楚地反映发送者的类型, 并且接收者能够根据接收到的信号准确推断发送者的类型. 比如高能力者选择接受教育, 低能力者选择不接受.
    - **混同均衡 (Pooling Equilibrium)** 指均衡下不同类型的玩家选择相同的信号，因此接收者无法从信号中区分出玩家的类型.
-
+> 当传递信号无需付出成本时 (所谓空谈博弈), 一定存在一个混同均衡
+___
 ## 往年题型整理
 > - 不同形式语言的复杂度不同, 而人的演算能力是定值. 因此形式语言或者模型越复杂, 问题本身越简单.
 > - 不同问题的规模不同, 而人的演算能力是定值. 因此问题规模越大, 越容易存在巧妙的trick.
@@ -232,7 +233,9 @@ $$\sum_{\theta_{-i}\in \Theta_{-i}}\phi_i(\theta_{-i}|\theta_{ij})v_i(s_i^*(\the
 - 直接逆向归纳即可, 给出的solution应当形如 $(\sigma_1,\sigma_2,\cdots,\sigma_n)$
 > (5) 🔥🔥 Find a Nash equilibrium that is not a backward induction solution.
 - 专门构造, 使得在非均衡路径上不是nash均衡.
-
+___
+期中期末分割线(hj)
+___
 ### n. 信号博弈
 > (1) 🔥🔥 求分离/混同均衡
 - 先确定/待定信息发送者的策略
