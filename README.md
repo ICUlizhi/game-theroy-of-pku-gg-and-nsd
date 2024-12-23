@@ -1,6 +1,7 @@
 "# game-theroy-of-pku-gg-and-nsd"
 ## 2024/12/23
-- Game Theory from Thick to Thin 知识体系基本完成, 除了往年题型整理和ll不考的拍卖部分, 我准备边刷往年题边更新后者.
+- 2022finaltest answer : ll唯一能找到的往年题的答案
+- Game Theory from Thick to Thin : 知识体系基本完成, 除了往年题型整理和ll不考的拍卖部分, 该笔记是两门课的综合
 ## 2024/12/16
 - ll : hw5
 ## 2024/11/23

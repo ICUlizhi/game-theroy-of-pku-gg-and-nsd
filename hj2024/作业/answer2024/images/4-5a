@@ -1,0 +1,29 @@
+digraph {
+	x1 [label=x1 xlabel=N]
+	x2 [label=x2 xlabel=1]
+	x3 [label=x3 xlabel=1]
+	x4 [label=x4]
+	x5 [label=x5 xlabel="0,0"]
+	x6 [label=x6]
+	x7 [label=x7 xlabel="0,0"]
+	x8 [label=x8 xlabel="2,-2"]
+	x9 [label=x9 xlabel="4,-4"]
+	x10 [label=x10 xlabel="2,-2"]
+	x11 [label=x11 xlabel="-4,4"]
+	x1 -> x2 [label=e]
+	x1 -> x3 [label=n]
+	x2 -> x4 [label=A]
+	x2 -> x5 [label=B]
+	x3 -> x6 [label=A]
+	x3 -> x7 [label=B]
+	x4 -> x8 [label=C]
+	x4 -> x9 [label=D]
+	x6 -> x10 [label=C]
+	x6 -> x11 [label=D]
+	{
+		rank=same
+		x4
+		x6
+	}
+	x4 -> x6 [label=2 dir=none style=dashed]
+}

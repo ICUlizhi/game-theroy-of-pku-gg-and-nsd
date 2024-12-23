@@ -1,0 +1,52 @@
+digraph {
+	5 [label=5]
+	1 [label=1]
+	5 -> 1
+	9 [label=9]
+	5 -> 9
+	1 [label=1]
+	"1_left_empty" [label="" height=0 shape=point style=invis width=0]
+	1 -> "1_left_empty" [color=transparent dir=none width=10]
+	2 [label=2]
+	1 -> 2
+	9 [label=9]
+	6 [label=6]
+	9 -> 6
+	10 [label=10]
+	9 -> 10
+	2 [label=2]
+	"2_left_empty" [label="" height=0 shape=point style=invis width=0]
+	2 -> "2_left_empty" [color=transparent dir=none width=10]
+	4 [label=4]
+	2 -> 4
+	10 [label=10]
+	"10_left_empty" [label="" height=0 shape=point style=invis width=0]
+	10 -> "10_left_empty" [color=transparent dir=none width=10]
+	11 [label=11]
+	10 -> 11
+	4 [label=4]
+	3 [label=3]
+	4 -> 3
+	"4_right_empty" [label="" height=0 shape=point style=invis width=0]
+	4 -> "4_right_empty" [color=transparent dir=none width=10]
+	8 [label=8]
+	7 [label=7]
+	8 -> 7
+	"8_right_empty" [label="" height=0 shape=point style=invis width=0]
+	8 -> "8_right_empty" [color=transparent dir=none width=10]
+	6 [label=6]
+	"6_left_empty" [label="" height=0 shape=point style=invis width=0]
+	6 -> "6_left_empty" [color=transparent dir=none width=10]
+	8 [label=8]
+	6 -> 8
+	11 [label=11]
+	"11_left_empty" [label="" height=0 shape=point style=invis width=0]
+	11 -> "11_left_empty" [color=transparent dir=none width=10]
+	12 [label=12]
+	11 -> 12
+	12 [label=12]
+	"12_left_empty" [label="" height=0 shape=point style=invis width=0]
+	12 -> "12_left_empty" [color=transparent dir=none width=10]
+	13 [label=13]
+	12 -> 13
+}
