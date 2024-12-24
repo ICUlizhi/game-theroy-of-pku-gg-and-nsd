@@ -1,6 +1,7 @@
 "# game-theroy-of-pku-gg-and-nsd"
 ## 2024/12/24
-- Game Theory from Thick to Thin v3.0 : 大量整理了ll的往年题型和作业题型, 以及ll专属的一些内容/表述, 本笔记持续更新迭代中
+- Game Theory from Thick to Thin v3.1 : 大量整理了ll的往年题型和作业题型, 以及ll专属的一些内容/表述, 本笔记持续更新迭代中
+  - 3.1 基本是应对ll考试的最完备版本了, 明天考前大概不会再更新
 ## 2024/12/23
 - 2022finaltest answer : ll唯一能找到的往年题的答案
 - Game Theory from Thick to Thin : 知识体系基本完成, 除了往年题型整理和ll不考的拍卖部分, 该笔记是两门课的综合
