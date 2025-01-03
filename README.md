@@ -1,4 +1,7 @@
 "# game-theroy-of-pku-gg-and-nsd"
+## 2025/1/4
+- Game Theory from Thick to Thin v4.0 : 加的东西有点小多, 现在是hj博弈论版本
+
 ## 2024/12/24
 - Game Theory from Thick to Thin v3.1 : 大量整理了ll的往年题型和作业题型, 以及ll专属的一些内容/表述, 本笔记持续更新迭代中
   - 3.1 基本是应对ll考试的最完备版本了, 明天考前大概不会再更新
