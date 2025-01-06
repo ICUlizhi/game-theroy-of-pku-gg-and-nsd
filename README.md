@@ -1,4 +1,7 @@
 "# game-theroy-of-pku-gg-and-nsd"
+## 2025/1/5
+- Game Theory from Thick to Thin v4.1 : 考前最后一push, 完结撒花~
+- 招 25 年本资料库继任者
 ## 2025/1/4
 - Game Theory from Thick to Thin v4.0 : 加的东西有点小多, 现在是hj博弈论版本
 
